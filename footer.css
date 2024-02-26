@@ -1,0 +1,20 @@
+.footer {
+  background-color: #333; /* 푸터의 배경 색상 */
+  color: white; /* 텍스트 색상 */
+  text-align: center; /* 텍스트를 중앙에 정렬 */
+  padding: 20px 0; /* 상하 패딩 */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.instagram-link {
+  color: white; /* 아이콘 색상 */
+  font-size: 24px; /* 아이콘 크기 */
+  text-decoration: none; /* 밑줄 제거 */
+  margin-top: 20px; /* 상단 여백 */
+}
+
+.instagram-link:hover {
+  color: #E1306C; /* 인스타그램 색상으로 호버 시 변경 */
+}
