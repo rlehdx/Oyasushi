@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oya Sushi Inc.</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+
+header {width:100%;background:#fff;position:fixed;z-index:10;}
+.header-list {width:1000px;font-size:0;padding-bottom:0px;}
+.header-list > li > div > img {
+    width: 150px; /* 이미지의 너비를 100px로 설정 */
+    height: auto; /* 이미지의 높이를 자동으로 조정하여 비율을 유지 */
+    float: left; 
+
+}
+
+.menu-ul {font-size:10;}
+.menu-ul > li {font-size:12px;display:inline-block;vertical-align:middle;}
+.menu-ul > li > a {display:block;width:auto;padding:15px;}
+/* 햄버거메뉴 시작 */
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:0px;width:60px;height:50px;left:1730px;position:fixed;right: 20px; top: 80px;cursor:pointer;Z-inderx:100;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#000;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#fff;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:300px;height:100%;background:#222;position:fixed;top:0;right:-300px;z-index:1;transition:all .35s;}
+input[id="menuicon"]:checked + label + div {right:0;}
+
+
+.sitemap-ul {font-size:0;width:100px;margin:200px -10px;text-align:left;}
+.sitemap-ul > li {font-size:40px;display:inline-block;vertical-align:center;width:20%;letter-spacing: 5px; position: relative;}
+ a {
+        display: block;
+        margin-top: 30px; 
+        margin-bottom: 30px; 
+	color:white;
+    }
+</style>
+<header>
+<ul class="header-list">
+<img src="https://github.com/rlehdx/Jm/blob/main/LOgo3.jpg?raw=true" class="slide" alt="슬라이드 1">
+
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+	<span></span>
+	<span></span>
+	<span></span>
+
+</label>
+		<div class="sidebar">
+					<ul class="sitemap-ul">
+						<li>
+							<ul>
+								<a href="#">Menu</a>
+
+								<a href="#">Contact Us</a>
+
+								<a href="#">Location</a>
+
+								
+							</ul>
+						</li>
+					
+</div>
+
+</header>
+
+<body>
+
+<div class="body-content">
+  <div class="content">
+<div class="section" id="section9">
+</div>
+
+<div class="slider">
+    <img src="https://github.com/rlehdx/Jm/blob/main/sushi2.jpg?raw=true" class="slide" alt="슬라이드 1">
+    <img src="https://github.com/rlehdx/Jm/blob/main/sushi3.jpg?raw=true" class="slide" alt="슬라이드 2">
+    <img src="https://github.com/rlehdx/Jm/blob/main/sushi4.jpg?raw=true" class="slide" alt="슬라이드 3">
+</div>
+
+<div class="section8" id="Jang" style="background-image:url('https://media.triple.guide/triple-cms/c_limit,f_auto,h_1280,w_1280/1ebde9a4-8697-43c1-8cd7-363f3afec475.jpeg');">
+    
+</div>
+
+<div class="section" id="section2" >
+      </div>
+<div class="section" id="section1" style="background-image:url('https://github.com/rlehdx/Jm/blob/main/%EC%9E%A5%EC%9D%B8.jpg?raw=true');">
+    
+</div>
+
+<div class="section" id="section3">
+
+    <img src="https://github.com/rlehdx/Jm/blob/main/Test.jpg?raw=true" alt="Your Image">
+ 
+
+    <h2>Hours</h2>
+    <p>Mon - Closed</p>
+    <p>Tuesday 11:00AM–9:00PM</p>
+    <p>Wednesday 11:00AM–9:00PM</p>
+    <p>Thursday 11:00AM–9:00PM</p>
+    <p>Friday 11:00AM–9:00PM</p>
+    <p>Saturday 11:00AM–9:00PM</p>
+    <p>Sunday 11:00AM–9:00PM</p>
+</div>
+
+<div class="section" id="section6">Menu
+  <h1>Full menu</h1>
+  <!-- Full Menu 버튼 추가 -->
+  <a href="menu.html" class="menu-link">Full Menu</a>
+
+</div>
+
+<!-- 추가 섹션들 -->
+
+<button id="scrollToTopBtn">위로</button>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2024 Oya Sushi Inc. All rights reserved.</p>
+    <p>Contact us: info@oyasushi.com</p>
+<a href="https://www.instagram.com/oyasushiinc/?igsh=MTYwYzZzbzJubzYxag%3D%3D" target="_blank" class="instagram-link">
+      <i class="fab fa-instagram"></i> Follow us on Instagram
+  </div>
+</footer>
+ <script  src="./Menu.js"></script>
+<script src="slide.js"></script>
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var headerHeight = document.querySelector('header').offsetHeight;
+    document.querySelector('.first-section').style.paddingTop = headerHeight + 'px';
+});
+</script>
+</body>
+
+</html>
